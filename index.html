@@ -1,0 +1,49 @@
+<!---- © Koshik Kumar --->
+<!---- Hare Krishna ----->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charSet="utf-8"/>
+    <title>YouTube Downloader - YouTube to MP4 Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="YouTube Downloader that let you download videos from youtube in MP4 and MP3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="canonical" href="https://KoshikKumar17.github.io/ytdl">
+    
+    <style>
+      :root {
+        --main-bt-color: white;	
+        --main-bg1-color: blue;
+        --main-bg2-color: black;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  
+  <body>
+    <nav style="color:black;size:20px;"><a href="https://KoshikKumar17.github.io"><b>Koshik Kumar</b></a></nav>
+    <div id="main">
+      <h2>Download YouTube Video in 360p and 128k</h2>
+      <div id="search-box">
+        <input id="search-input" type="text" name="url" placeholder="Paste Video link from YouTube">
+        <input id="search-submit" type="submit" value="Start" onclick="return get_mp4()"><div id="loader"></div>
+      </div>
+      <div id="info"></div>
+    </div>
+    
+    <footer class="copyright">
+      <div class="footer_link"></div>
+      <p>© 2024</p>
+      <font style="font-size:9px;" color="white"><i><b>Last Modified: <span id="lastModified"></span> IST </b></i>
+    </footer>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
+    <script src="script.js"></script>
+    <script>
+      // <!-- Last Modified object -->
+      var text = document.lastModified;
+      document.getElementById("lastModified").innerHTML = text;
+    </script>
+  </body>
+</html>
