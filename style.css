@@ -1,0 +1,169 @@
+/* © Koshik Kumar */
+
+
+body {
+    margin: 0;
+    color: white;
+    background-color: #8080ff;
+    text-align: center;
+}
+
+#main {
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    padding: 5px 10px;
+    background-color: #8080ff;
+}
+
+#main h2{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0 20px 0;
+}
+
+.nav {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav a{
+    color: var(--main-bg1-color);
+    text-decoration: none;
+}
+
+.copyright{
+    max-width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_link{
+    margin-top: 0.5rem;
+}
+
+.copyright a{
+    color: var(--main-bg1-color);
+}
+
+#search-box{
+    display: flex;
+    max-width: 850px;
+    height: 42px;
+    border: 1px var(--main-bg1-color) solid;
+    border-radius: 25px;
+    margin: auto;
+    background-color: white;
+}
+
+#search-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#search-submit {
+    width: 100px;
+    height: 100%;
+    background-color: var(--main-bg1-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--main-bt-color);
+    font-size: 16px;
+}
+
+#search-submit:hover {
+	background-color: var(--main-bg2-color);
+}
+
+#loader {
+	margin-right: 20px;
+	vertical-align: middle;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--main-bg1-color);
+    width: 34px;
+    height: 34px;
+    display: none;
+    border-radius: 75%;
+    vertical-align: -10%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 30%);
+    animation: rotate 1s linear infinite;
+}
+
+#info{
+	max-width: 850px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.get-download-submit {
+	margin-top: 5px;
+    width: 125px;
+    height: 35px;
+    background-color: var(--main-bg1-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+	border-radius: 25px;
+    color: var(--main-bt-color);
+}
+
+.get-download-submit:hover {
+	background-color: var(--main-bg2-color);
+}
+
+.download-btn {
+	width: 100%;
+	display: inline-block;
+	padding: 10px 0 10px 0;
+	background-color: var(--main-bg1-color);
+	color: var(--main-bt-color);
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.download-btn:hover {
+	background-color: var(--main-bg2-color);
+}
+
+.download-loading {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
+.download-loading:before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    color: red;
+    border: 2px solid #fff;
+    border-radius: 75%;
+    vertical-align: -10%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 30%);
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotatez(0deg);
+    }
+    to {
+        transform: rotatez(360deg);
+    }
+}
